@@ -1,118 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coach de Foto | Aprender a ver</title>
-    <meta name="description" content="La fotografía como una forma de aprender a ver, entender otras realidades y conectar con el mundo.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body { 
-            margin: 0; 
-            display: flex; 
-            flex-direction: column; 
-            min-height: 100vh; 
-            background-color: #fff; 
-            color: #1a1a1a; 
-            font-family: 'Georgia', serif; 
-            line-height: 1.8; 
-        }
+<title>Coach de Foto | Aprender a ver</title>
+<meta name="description" content="Aprender a ver es el inicio de toda fotografía. Talleres y viajes para desarrollar una mirada propia.">
 
-        main { 
-            flex: 1; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            padding: 60px 20px; 
-        }
+<link rel="canonical" href="https://coachdefoto.com/">
 
-        .content-box { 
-            max-width: 700px; 
-            text-align: center; 
-            font-size: 1.2rem; 
-        }
+<!-- SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://lubezky.com/#sergio",
+      "name": "Sergio Lubezky",
+      "url": "https://lubezky.com/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://coachdefoto.com/#website",
+      "url": "https://coachdefoto.com/",
+      "name": "Coach de Foto",
+      "publisher": { "@id": "https://lubezky.com/#sergio" },
+      "inLanguage": "es"
+    }
+  ]
+}
+</script>
 
-        h1 { 
-            font-size: 1.5rem;
-            font-weight: bold; 
-            margin-bottom: 16px; 
-        }
+<style>
+body { 
+    margin: 0; 
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+    background-color: #fff; 
+    color: #1a1a1a; 
+    font-family: 'Georgia', serif; 
+    line-height: 1.8; 
+}
 
-        p {
-            margin-bottom: 12px;
-        }
+main { 
+    flex: 1; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 60px 20px; 
+}
 
-        .content-box a { 
-            color: #000; 
-            text-decoration: none; 
-            font-weight: bold; 
-            border-bottom: 1px solid #ddd; 
-        }
+.content-box { 
+    max-width: 700px; 
+    text-align: center; 
+    font-size: 1.2rem; 
+}
 
-        .content-box a:hover { 
-            border-bottom: 1px solid #000; 
-        }
+h1 { 
+    font-size: 1.5rem;
+    font-weight: bold; 
+    margin-bottom: 16px; 
+}
 
-        footer { 
-            padding: 60px 20px; 
-            text-align: center; 
-            font-family: 'Helvetica Neue', Arial, sans-serif; 
-        }
+p { margin-bottom: 14px; }
 
-        .profile-img { 
-            width: 75px; 
-            height: 75px; 
-            border-radius: 50%; 
-            margin-bottom: 10px; 
-            object-fit: cover; 
-            border: 1px solid #eee; 
-        }
+.content-box a { 
+    color: #000; 
+    text-decoration: none; 
+    font-weight: bold; 
+    border-bottom: 1px solid #ddd; 
+}
 
-        .name-link { 
-            text-decoration: none; 
-            color: inherit; 
-            display: block; 
-            margin-bottom: 10px; 
-        }
+.content-box a:hover { 
+    border-bottom: 1px solid #000; 
+}
 
-        .name { 
-            font-weight: 600; 
-            font-size: 1rem; 
-            letter-spacing: 1.5px; 
-            text-transform: uppercase; 
-        }
+/* GALERÍA */
+.gallery {
+    margin: 40px 0;
+}
 
-        .social-nav { 
-            list-style: none; 
-            padding: 0; 
-            margin: 0; 
-            display: flex; 
-            flex-wrap: wrap; 
-            justify-content: center; 
-            gap: 12px; 
-            font-size: 0.85rem; 
-        }
+.gallery img {
+    width: 100%;
+    margin-bottom: 18px;
+    border-radius: 2px;
+}
 
-        .social-nav a { 
-            color: #666; 
-            text-decoration: none; 
-        }
+/* CTA */
+.cta {
+    margin: 60px 0 20px 0;
+}
 
-        .social-nav a:hover { 
-            color: #000; 
-        }
+.cta p {
+    margin-bottom: 18px;
+}
 
-        .social-nav li:not(:last-child)::after { 
-            content: "-"; 
-            margin-left: 12px; 
-            color: #ccc; 
-        }
+.cta-button {
+    display: inline-block;
+    padding: 16px 28px;
+    border: 1px solid #000;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 
-/* --- Estilos Finales Footer Unificado --- */
+/* FOOTER */
 footer { 
     padding: 60px 20px; 
     text-align: center; 
     font-family: 'Helvetica Neue', Arial, sans-serif; 
+}
+
+.profile-img { 
+    width: 75px; 
+    height: 75px; 
+    border-radius: 50%; 
+    margin-bottom: 10px; 
+    object-fit: cover; 
+    border: 1px solid #eee; 
 }
 
 .name-link { 
@@ -137,92 +145,75 @@ footer {
     line-height: 1.7;
 }
 
-.footer-bio p { margin: 0; }
-
 .footer-bio a {
     color: #1a1a1a;
     text-decoration: none;
     font-weight: 600;
     border-bottom: 1px solid #eee;
-    transition: all 0.3s ease;
 }
 
 .footer-bio a:hover {
     border-bottom: 1px solid #1a1a1a;
-    background-color: #f9f9f9;
 }
-/* --------------------------------------- */
-        
-    </style>
 
-    <script type="application/ld+json">
-    {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Person",
-      "@id": "https://lubezky.com/#sergio",
-      "name": "Sergio Lubezky",
-      "url": "https://lubezky.com/",
-      "sameAs": [
-        "https://www.linkedin.com/in/sergiolubezky/",
-        "https://inteligencia.com/",
-        "https://unnuevopuntodevista.com/",
-        "https://liderazgointerino.com/",
-        "https://elmismobarco.com/",
-        "https://coachdefoto.com/"
-      ],
-      "knowsAbout": ["Photography", "Visual Narrative", "Strategic Observation"]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://coachdefoto.com/#website",
-      "name": "Coach de Foto",
-      "url": "https://coachdefoto.com/",
-      "publisher": { "@id": "https://lubezky.com/#sergio" },
-      "description": "Entrenamiento de la mirada y narrativa visual para trascender la técnica fotográfica."
-    }
-  ]
+.social-nav { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 12px; 
+    font-size: 0.85rem; 
 }
-    </script>
 
+.social-nav a { 
+    color: #666; 
+    text-decoration: none; 
+}
+
+.social-nav a:hover { 
+    color: #000; 
+}
+</style>
 </head>
 
 <body>
 
 <main>
-    <div class="content-box">
-        <h1>Coach de foto</h1>
+<div class="content-box">
 
-        <p>
-            La fotografía, al menos como la entiendo, no comienza con la cámara ni con la técnica, sino con la forma en la que una persona se relaciona con lo que tiene enfrente. Antes de encuadrar, antes de decidir un ajuste, hay una mirada que se forma, se cuestiona y se transforma con el tiempo.
-        </p>
+<h1>Coach de foto</h1>
 
-        <p>
-            Durante años he tenido la oportunidad de aprender directamente de algunos de los fotógrafos contemporáneos más importantes, no solo desde lo técnico, sino desde la forma en la que piensan y construyen sentido a través de la imagen. Ese aprendizaje ha ido modificando la manera en la que entiendo lo que veo y cómo me acerco a la realidad.
-        </p>
+<p>
+La fotografía no comienza con la cámara, sino con la forma en la que una persona se relaciona con lo que tiene enfrente. Antes de encuadrar, antes de decidir un ajuste, hay una mirada que se forma, se cuestiona y se transforma con el tiempo.
+</p>
 
-        <p>
-            Este espacio nace como una forma de compartir ese proceso. No como una clase tradicional, sino como una invitación a desarrollar una mirada propia, más consciente y más intencional.
-        </p>
+<p>
+Este espacio nace como una forma de compartir ese proceso. No como una clase tradicional, sino como una invitación a desarrollar una mirada propia, más consciente y más intencional.
+</p>
 
-        <p>
-            Si quieres explorar cómo se desarrolla este proceso en la práctica, puedes ver <a href="/como-aprender-a-ver/">cómo aprender a ver</a>.
-        </p>
+<p>
+Puedes explorar <a href="/como-aprender-a-ver/">cómo aprender a ver</a> o vivirlo en los <a href="/viajes/">viajes</a>.
+</p>
 
-        <p>
-            Y si quieres entender cómo esta forma de observar se transforma en experiencia, puedes explorar los <a href="/viajes/">viajes</a>.
-        </p>
+<div class="gallery">
+    <img src="/bote.jpg" alt="Observación y silencio" loading="lazy">
+    <img src="/mujer.jpg" alt="Percepción e interpretación" loading="lazy">
+    <img src="/nene.jpg" alt="Luz y momento" loading="lazy">
+</div>
 
-        <p>
-            Esta forma de trabajar también se conecta con otras dimensiones del mismo proceso. Puedes verlo en <a href="https://lubezky.com">lubezky.com</a>, donde se integra dentro de un marco más amplio.
-        </p>
+<div class="cta">
+    <p>
+        Si quieres información sobre talleres o cursos, escríbeme directamente. Podemos ver juntos cuál es el mejor punto de entrada según tu momento y lo que estás buscando.
+    </p>
 
-        <p>
-            Cada elemento se relaciona directamente con la forma en la que aprendemos a cambiar nuestra perspectiva en <a href="https://unnuevopuntodevista.com">un nuevo punto de vista</a>, así como con la dimensión más humana de la experiencia en <a href="https://elmismobarco.com">el mismo barco</a>.
-        </p>
+    <a href="mailto:contacto@liderazgointerino.com?subject=Talleres%20de%20fotografía" class="cta-button">
+        Pedir información
+    </a>
+</div>
 
-    </div>
+</div>
 </main>
 
 <footer>
@@ -233,15 +224,16 @@ footer {
     </a>
 
     <div class="footer-bio">
-        <p>
-            Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
-            Exploro la <a href="https://inteligencia.com" target="_blank">Inteligencia</a> aplicada, 
-            la <a href="https://liderazgointerino.com" target="_blank">Dirección Interina</a> en crisis 
-            y la narrativa visual en <a href="https://coachdefoto.com">Coach de Foto</a>. 
-            Todo bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com" target="_blank">un nuevo punto de vista</a> 
-            para entender que todos estamos en <a href="https://elmismobarco.com" target="_blank">el mismo barco</a>.
-        </p>
-    </div>
+    <p>
+        Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. 
+        Exploro la <a href="https://inteligencia.com" target="_blank">Inteligencia</a> aplicada, 
+        la <a href="https://liderazgointerino.com" target="_blank">Dirección Interina</a>, 
+        la narrativa visual en <a href="https://coachdefoto.com" target="_blank">Coach de Foto</a> 
+        y la música como otra forma de <a href="https://musica.sergiolubezky.com" target="_blank">comunicar</a>, 
+        bajo una misma premisa: encontrar <a href="https://unnuevopuntodevista.com" target="_blank">un nuevo punto de vista</a> 
+        para entender que todos estamos en <a href="https://elmismobarco.com">el mismo barco</a>.
+    </p>
+</div>
     
     <ul class="social-nav">
         <li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a></li>
@@ -249,7 +241,8 @@ footer {
         <li><a href="https://www.facebook.com/sergiolubezky/" target="_blank">Facebook</a></li>
         <li><a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a></li>
         <li><a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a></li>
-        <li><a href="https://coachdefoto.com">Fotografía</a></li>
+        <li><a href="https://musica.sergiolubezky.com" target="_blank">Música</a></li>
+        <li><a href="https://coachdefoto.com" target="_blank">Fotografía</a></li>
     </ul>
 </footer>
 

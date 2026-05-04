@@ -9,30 +9,11 @@
 
 <link rel="canonical" href="https://coachdefoto.com/">
 
-<!-- SCHEMA -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Person",
-      "@id": "https://lubezky.com/#sergio",
-      "name": "Sergio Lubezky",
-      "url": "https://lubezky.com/"
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://coachdefoto.com/#website",
-      "url": "https://coachdefoto.com/",
-      "name": "Coach de Foto",
-      "publisher": { "@id": "https://lubezky.com/#sergio" },
-      "inLanguage": "es"
-    }
-  ]
-}
-</script>
-
 <style>
+* {
+    box-sizing: border-box;
+}
+
 body { 
     margin: 0; 
     display: flex; 
@@ -68,13 +49,12 @@ p { margin-bottom: 14px; }
 
 .content-box a { 
     color: #000; 
-    text-decoration: none; 
+    text-decoration: underline;
     font-weight: bold; 
-    border-bottom: 1px solid #ddd; 
 }
 
 .content-box a:hover { 
-    border-bottom: 1px solid #000; 
+    opacity: 0.7;
 }
 
 /* GALERÍA */
@@ -85,7 +65,6 @@ p { margin-bottom: 14px; }
 .gallery img {
     width: 100%;
     margin-bottom: 18px;
-    border-radius: 2px;
 }
 
 /* CTA */
@@ -93,18 +72,22 @@ p { margin-bottom: 14px; }
     margin: 60px 0 20px 0;
 }
 
-.cta p {
-    margin-bottom: 18px;
-}
-
 .cta-button {
     display: inline-block;
-    padding: 16px 28px;
+    padding: 16px 24px;
     border: 1px solid #000;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
+    max-width: 100%;
+}
+
+@media (max-width: 600px) {
+    .cta-button {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 /* FOOTER */
@@ -193,25 +176,14 @@ La fotografía no comienza con la cámara, sino con la forma en la que una perso
 Este espacio nace como una forma de compartir ese proceso. No como una clase tradicional, sino como una invitación a desarrollar una mirada propia, más consciente y más intencional.
 </p>
 
-<p>
-Puedes explorar <a href="/como-aprender-a-ver/">cómo aprender a ver</a> o vivirlo en los <a href="/viajes/">viajes</a>.
-</p>
-
 <div class="gallery">
     <img src="/bote.jpg" alt="Observación y silencio" loading="lazy">
-    <img src="/mujer.jpg" alt="Percepción e interpretación" loading="lazy">
     <img src="/nene.jpg" alt="Luz y momento" loading="lazy">
 </div>
 
-<div class="cta">
-    <p>
-        Si quieres información sobre talleres o cursos, escríbeme directamente. Podemos ver juntos cuál es el mejor punto de entrada según tu momento y lo que estás buscando.
-    </p>
-
-    <a href="mailto:contacto@liderazgointerino.com?subject=Talleres%20de%20fotografía" class="cta-button">
-        Pedir información
-    </a>
-</div>
+<p>
+Te invito a explorar un curso personalizado para <a href="/como-aprender-a-ver/"><strong>aprender a ver</strong></a> o a vivirlo dentro de un grupo pequeño en alguno de nuestros <a href="/viajes/"><strong>viajes de fotografía</strong></a>.
+</p>
 
 </div>
 </main>

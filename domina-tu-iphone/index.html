@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domina tu iPhone: Fotografía Profesional en 90 Minutos | Coach de Foto</title>
+    <meta name="description" content="Masterclass personalizada en vivo por Zoom. Descubre cómo configurar y exprimir la cámara de tu iPhone para tomar fotos espectaculares sin complicaciones.">
+    <meta name="author" content="Sergio Lubezky">
+    <link rel="canonical" href="https://coachdefoto.com/domina-tu-iphone/" />
+
+    <style>
+        body { margin: 0; display: flex; flex-direction: column; min-height: 100vh; background-color: #fff; color: #1a1a1a; font-family: 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+        
+        main { flex: 1; display: flex; justify-content: center; padding: 60px 20px 80px 20px; }
+        .content-box { width: 100%; max-width: 750px; text-align: left; }
+        
+        /* Encabezado / Hero Section */
+        h1 { font-size: 2.2rem; font-weight: 800; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; text-align: center; line-height: 1.2; color: #1a1a1a; }
+        .subtitle { font-size: 1.2rem; color: #555; text-align: center; margin-bottom: 40px; font-weight: 400; max-width: 650px; margin-left: auto; margin-right: auto; }
+        
+        p { margin-bottom: 20px; text-align: justify; font-size: 1.1rem; color: #333; }
+        
+        /* Listas de Dolor y Beneficios */
+        ul { list-style: none; padding: 0; margin: 25px 0; }
+        ul li { font-size: 1.1rem; margin-bottom: 15px; padding-left: 30px; position: relative; text-align: justify; }
+        ul.pain-list li::before { content: "❌"; position: absolute; left: 0; top: 2px; }
+        ul.benefit-list li::before { content: "✅"; position: absolute; left: 0; top: 2px; }
+        
+        /* Temario / Acordeón Operativo */
+        h2 { font-size: 1.5rem; font-weight: 700; margin-top: 50px; margin-bottom: 25px; letter-spacing: 0.5px; text-transform: uppercase; color: #1a1a1a; border-bottom: 2px solid #1a1a1a; padding-bottom: 8px; }
+        
+        .timeline { margin: 30px 0 40px 20px; }
+        .timeline-item { margin-bottom: 30px; padding-left: 20px; border-left: 3px solid #1a1a1a; text-align: justify; }
+        .timeline-item strong { display: block; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; color: #1a1a1a; margin-bottom: 8px; }
+        .timeline-item ul { margin: 10px 0 0 0; padding-left: 15px; list-style: disc; }
+        .timeline-item ul li { padding-left: 0; margin-bottom: 5px; font-size: 1rem; color: #444; }
+        .timeline-item ul li::before { content: none; }
+
+        /* Contenedores de Llamada a la Acción (CTA) */
+        .cta-container { text-align: center; margin: 45px 0; padding: 40px 30px; background-color: #f9f9f9; border: 1px solid #eee; border-radius: 4px; }
+        .cta-container h3 { font-size: 1.3rem; text-transform: uppercase; letter-spacing: 1px; margin-top: 0; margin-bottom: 15px; font-weight: 700; }
+        .cta-container p { text-align: center; font-size: 1.05rem; color: #444; margin-bottom: 25px; }
+        
+        .btn-red { display: inline-block; background-color: #d32f2f; color: #fff !important; padding: 16px 40px; text-decoration: none !important; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; font-size: 1rem; border-radius: 4px; transition: background 0.3s; border: none; box-shadow: 0 4px 6px rgba(211,47,47,0.15); }
+        .btn-red:hover { background-color: #b71c1c; }
+        
+        .guarantee { font-size: 0.85rem; color: #777; margin-top: 15px; font-style: italic; }
+        
+        .navigation-notes { margin-top: 50px; text-align: center; font-size: 1rem; border-top: 1px solid #eee; padding-top: 30px; }
+        .navigation-notes a { color: #1a1a1a; font-weight: bold; text-decoration: none; border-bottom: 1px solid #ccc; }
+        .navigation-notes a:hover { border-bottom: 1px solid #1a1a1a; }
+
+        /* --- HOJA DE ESTILOS UNIFICADA PARA EL FOOTER --- */
+        footer { padding: 60px 20px 40px 20px; background-color: #ffffff; border-top: 1px solid #f2f2f2; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.9rem; line-height: 1.6; }
+        .footer-grid { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1.2fr 1fr; gap: 50px; text-align: left; }
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; gap: 35px; text-align: center; } }
+        .footer-col h3 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-top: 0; margin-bottom: 20px; }
+        .footer-col p { color: #555; margin: 0; font-size: 0.9rem; text-align: justify; line-height: 1.6; }
+        .footer-col ul { list-style: none; padding: 0; margin: 0; }
+        .footer-col ul li { margin-bottom: 12px; padding-left: 0; font-size: 0.9rem; }
+        .footer-col ul li::before { content: none; }
+        .footer-col ul li a { color: #1a1a1a; text-decoration: none; font-weight: 600; border-bottom: 1px solid #eee; transition: all 0.3s; }
+        .footer-col ul li a:hover { border-bottom: 1px solid #1a1a1a; }
+        .footer-col ul li a.current-location { color: #d32f2f !important; border-bottom: 1px solid #f9ebeb; }
+        .footer-col ul li a.current-location:hover { border-bottom: 1px solid #d32f2f; }
+        .footer-socials { display: flex; gap: 15px; margin-top: 20px; }
+        @media (max-width: 768px) { .footer-socials { justify-content: center; } }
+        .footer-socials a { color: #666; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
+        .footer-socials a:hover { color: #000; }
+        
+        .footer-bottom { max-width: 900px; margin: 25px auto 0 auto; padding-top: 20px; border-top: 1px solid #f2f2f2; text-align: center; font-size: 0.8rem; color: #999; }
+    </style>
+</head>
+<body>
+
+<main>
+    <article class="content-box">
+        <h1>¿Tienes un iPhone en tu bolsillo pero tus fotos siguen pareciendo de aficionado?</h1>
+        <div class="subtitle">Descubre cómo sacar fotos de nivel profesional con tu celular en solo 90 minutos. Sin cámaras pesadas, sin complicaciones y en vivo por Zoom.</div>
+
+        <div class="cta-container" style="margin-top: 0;">
+            <a href="https://calendly.com/sergiolubezky" target="_blank" class="btn-red">Reservar mi Clase por $800 MXN</a>
+            <div class="guarantee">Sesión privada 1-a-1 de 90 minutos de alto impacto técnico.</div>
+        </div>
+
+        <h2>Te suena familiar alguna de estas situaciones:</h2>
+        <ul class="pain-list">
+            <li>Compras un iPhone nuevo con una cámara increíble, pero las fotos de tus viajes, productos o familia salen oscuras, movidas o con colores apagados.</li>
+            <li>No entiendes por qué el teléfono "enfoca" automáticamente el fondo en lugar de a la persona, objeto o platillo de comida que tienes enfrente.</li>
+            <li>Ves imágenes espectaculares en redes sociales y piensas: <em>"Ojalá yo pudiera tomar fotos así"</em>, sin saber que ellos solo activaron los ajustes correctos que tu iPhone ya tiene integrados.</li>
+        </ul>
+
+        <p><strong>La buena noticia:</strong> No necesitas invertir en una cámara profesional pesada ni en equipo costoso. Ya tienes una de las mejores herramientas ópticas del mundo en la palma de tu mano. Solo te hace falta el manual de instrucciones ejecutivo y correcto.</p>
+
+        <h2>Presentamos — Domina tu iPhone: Fotografía Profesional</h2>
+        <p>Una masterclass 100% personalizada, en vivo y uno a uno por Zoom. No es un video grabado aburrido ni un webinar masivo. Es una sesión práctica donde abriremos la cámara de tu iPhone, corregiremos tus vicios técnicos y te enseñaré a configurarlo para que cada captura sea digna de portafolio.</p>
+        <p><strong>¿Por qué en 90 minutos?</strong> Porque eliminamos el relleno. Vamos directo al grano: configuración nativa, técnica de exposición, leyes de composición, revelado digital express y práctica en tiempo real. Ni un minuto más, ni un minuto menos.</p>
+
+        <h2>Temario de Precisión (Desglose Minuto a Minuto)</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <strong>Min 00 - 10: El Despertar de tu Cámara (Configuración Base)</strong>
+                <ul>
+                    <li>El "pecado capital" número 1: Limpiar el lente adecuadamente sin dañarlo.</li>
+                    <li>Activación del potencial oculto: Cuadrícula (Grid), Niveles y Formatos (Alta eficiencia vs. Más compatible).</li>
+                    <li>Cómo desactivar el "recorte automático" restrictivo en fotos grupales o macros.</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <strong>Min 10 - 25: Los Superpoderes de la App Nativa</strong>
+                <ul>
+                    <li>Bloqueo AE/AF: Control manual de exposición y enfoque (el secreto para cielos definidos y rostros iluminados).</li>
+                    <li>Modo Retrato Avanzado: Simulación de profundidad de campo (f/1.4 a f/16) e iluminación de estudio natural.</li>
+                    <li>Modo Noche: Umbrales reales de activación y técnicas de estabilización a pulso.</li>
+                    <li>Estilos Fotográficos: Perfiles cálidos, vibrantes o de alto contraste protegiendo el tono de la piel.</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <strong>Min 25 - 40: Composición y el Arte del Zoom Óptico</strong>
+                <ul>
+                    <li>La regla de los tercios optimizada para encuadres verticales y horizontales de impacto.</li>
+                    <li>La regla de oro del iPhone: Por qué JAMÁS debes usar el zoom digital (pellizcar pantalla). Uso de lentes ópticos nativos (0.5x, 1x, 3x, 5x).</li>
+                    <li>Perspectivas creativas: Ángulos contrapicados, encuadres fluidos a través de objetos y simetría geométrica.</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <strong>Min 40 - 55: El As bajo la manga: Live Photos y Video</strong>
+                <ul>
+                    <li>Live Photos estratégicos: Selección del frame milimétrico para rescatar parpadeos o movimientos inesperados.</li>
+                    <li>Conversión a Larga Exposición: Efecto seda en corrientes de agua, cascadas o estelas de luz urbana.</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <strong>Min 55 - 70: Edición Express (De buena a WOW en 30 segundos)</strong>
+                <ul>
+                    <li>Dominio del revelado nativo en iOS: Ajustes quirúrgicos de brillo, negros, luces altas, viñeteado y enderezado dinámico.</li>
+                    <li>Flujo Relámpago en Lightroom Mobile (Gratuito): Aplicación consistente de preajustes (presets) para un feed profesional.</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <strong>Min 70 - 85: Práctica en Vivo y Feedback Inmediato</strong>
+                <ul>
+                    <li>El alumno toma 3 fotografías en ese instante (en su entorno inmediato) aplicando las herramientas revisadas.</li>
+                    <li>Compartimos pantalla en Zoom o vía WhatsApp para realizar una micro-crítica constructiva y corrección técnica en vivo.</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <strong>Min 85 - 90: Cierre, Resolución de Dudas y Entrega</strong>
+                <ul>
+                    <li>Sesión abierta de preguntas y respuestas rápidas.</li>
+                    <li>Entrega del Bonus digital inmediato.</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Lo que habrás dominado al terminar la sesión:</h2>
+        <ul class="benefit-list">
+            <li><strong>Bloqueo AE/AF absoluto:</strong> Adiós a las fotos quemadas por el sol o a los rostros perdidos en las sombras.</li>
+            <li><strong>Manejo del Bokeh:</strong> Fondos desenfocados estéticos que aíslan y dan importancia a tu sujeto principal.</li>
+            <li><strong>Garantía de nitidez:</strong> Técnicas avanzadas de captura y postproducción rápida en menos de un minuto antes de publicar o archivar.</li>
+        </ul>
+
+        <h2>¿Para quién está diseñado este entrenamiento?</h2>
+        <p>Para **viajeros** que desean documentar sus travesías con calidad excepcional sin cargar mochilas pesadas. Para **emprendedores y creadores de contenido** que necesitan un feed pulcro y comercial. Para **padres de familia** que buscan retratar el crecimiento de sus hijos con calidad editorial, y para cualquier usuario de iPhone (modelo 11 en adelante) decidido a apagar de una vez por todas el modo automático restrictivo.</p>
+
+        <div class="cta-container">
+            <h3>Invierte de forma inteligente en tus recuerdos</h3>
+            <p>El conocimiento adquirido te ahorrará cientos de ráfagas borradas, frustraciones y memorias arruinadas en tus próximas vacaciones o proyectos comerciales.</p>
+            <p><strong>Incluye:</strong> Clase personalizada 1-a-1 por Zoom + Grabación de la sesión para repaso + PDF <em>"La Guía de Bolsillo: 10 Ajustes críticos del iPhone"</em>.</p>
+            <a href="https://calendly.com/sergiolubezky" target="_blank" class="btn-red">Agendar mi Clase Personalizada Ahora</a>
+            <div class="guarantee">Garantía de Satisfacción: Si en los primeros 20 minutos consideras que la clase no cumple tus expectativas, detenemos la sesión y te devolvemos el 100% de tu inversión sin preguntas.</div>
+        </div>
+
+        <div class="navigation-notes">
+            <p>¿Buscas dar el salto técnico a plataformas tradicionales? Explora nuestro curso de <a href="/camara-fotografica/">Manejo de Cámara Profesional</a> o regresa al <a href="/">inicio</a>.</p>
+        </div>
+    </article>
+</main>
+
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <h3>Sergio Lubezky A.</h3>
+            <p>Estratega enfocado en la intersección entre tecnología, liderazgo y percepción. Exploro cómo los sistemas complejos, los equipos de trabajo y las ideas colectivas se coordinan para transformar crisis operativas en ventajas estratégicas resilientes.</p>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a>
+                <a href="https://x.com/slubezky" target="_blank">X</a>
+                <a href="https://www.facebook.com/sergiolubezky/" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a>
+                <a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h3>Coach de Foto</h3>
+            <ul>
+                <li><a href="https://coachdefoto.com/camara-fotografica/">Cámara Profesional</a></li>
+                <li><a href="https://coachdefoto.com/domina-tu-iphone/" class="current-location">Curso iPhone</a></li>
+                <li><a href="https://lubezky.com/mapa/">Mapa del Ecosistema</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Ecosistema</h3>
+            <ul>
+                <li><a href="https://lubezky.com">Lubezky.com</a></li>
+                <li><a href="https://inteligencia.com">Inteligencia</a></li>
+                <li><a href="https://liderazgointerino.com/">Liderazgo Interino</a></li>
+                <li><a href="https://coachdefoto.com/" class="current-location">Coach de Foto</a></li>
+                <li><a href="https://elmismobarco.com">El Mismo Barco</a></li>
+                <li><a href="https://unnuevopuntodevista.com">Un Nuevo Punto de Vista</a></li>
+                <li><a href="https://musica.sergiolubezky.com">Música</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Sergio Lubezky A. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+</body>
+</html>

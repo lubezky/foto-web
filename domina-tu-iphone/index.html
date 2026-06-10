@@ -10,19 +10,25 @@
 
     <style>
         body { margin: 0; display: flex; flex-direction: column; min-height: 100vh; background-color: #fff; color: #1a1a1a; font-family: 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+        
         main { flex: 1; display: flex; justify-content: center; padding: 60px 20px 80px 20px; }
         .content-box { width: 100%; max-width: 750px; text-align: left; }
         
+        /* Encabezado / Hero Section Limpio */
         h1 { font-size: 2.2rem; font-weight: 800; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; text-align: center; line-height: 1.2; color: #1a1a1a; }
-        .subtitle { font-size: 1.2rem; color: #555; text-align: center; margin-bottom: 40px; font-weight: 400; max-width: 650px; margin-left: auto; margin-right: auto; }
-        p { margin-bottom: 20px; text-align: justify; font-size: 1.1rem; color: #333; }
+        .subtitle { font-size: 1.2rem; color: #555; text-align: center; margin-bottom: 50px; font-weight: 400; max-width: 650px; margin-left: auto; margin-right: auto; font-family: 'Georgia', serif; font-style: italic; }
         
+        p { margin-bottom: 20px; text-align: justify; font-size: 1.1rem; color: #333; font-family: 'Georgia', serif; }
+        strong { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 700; color: #000; }
+        
+        /* Listas de Contexto Semántico */
         ul { list-style: none; padding: 0; margin: 25px 0; }
-        ul li { font-size: 1.1rem; margin-bottom: 15px; padding-left: 30px; position: relative; text-align: justify; }
+        ul li { font-size: 1.1rem; margin-bottom: 15px; padding-left: 30px; position: relative; text-align: justify; font-family: 'Georgia', serif; }
         ul.pain-list li::before { content: "❌"; position: absolute; left: 0; top: 2px; }
         ul.benefit-list li::before { content: "✅"; position: absolute; left: 0; top: 2px; }
         
-        h2 { font-size: 1.5rem; font-weight: 700; margin-top: 50px; margin-bottom: 25px; letter-spacing: 0.5px; text-transform: uppercase; color: #1a1a1a; border-bottom: 2px solid #1a1a1a; padding-bottom: 8px; }
+        /* Secciones y Temario */
+        h2 { font-size: 1.4rem; font-weight: 700; margin-top: 50px; margin-bottom: 25px; letter-spacing: 0.5px; text-transform: uppercase; color: #1a1a1a; border-bottom: 2px solid #1a1a1a; padding-bottom: 8px; }
         
         .timeline { margin: 30px 0 40px 20px; }
         .timeline-item { margin-bottom: 30px; padding-left: 20px; border-left: 3px solid #1a1a1a; text-align: justify; }
@@ -31,18 +37,20 @@
         .timeline-item ul li { padding-left: 0; margin-bottom: 5px; font-size: 1rem; color: #444; }
         .timeline-item ul li::before { content: none; }
 
-        .cta-container { text-align: center; margin: 45px 0; padding: 40px 30px; background-color: #f9f9f9; border: 1px solid #eee; border-radius: 4px; }
+        /* Contenedor CTA Inferior Discreto y Elegante */
+        .cta-container { text-align: center; margin: 60px 0 20px 0; padding: 40px 30px; background-color: #fafafa; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
         .cta-container h3 { font-size: 1.3rem; text-transform: uppercase; letter-spacing: 1px; margin-top: 0; margin-bottom: 15px; font-weight: 700; }
-        .cta-container p { text-align: center; font-size: 1.05rem; color: #444; margin-bottom: 25px; }
+        .cta-container p { text-align: center; font-size: 1.05rem; color: #444; margin-bottom: 25px; font-family: 'Helvetica Neue', Arial, sans-serif; }
         
-        .btn-red { display: inline-block; background-color: #d32f2f; color: #fff !important; padding: 16px 40px; text-decoration: none !important; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; font-size: 1rem; border-radius: 4px; transition: background 0.3s; border: none; box-shadow: 0 4px 6px rgba(211,47,47,0.15); }
-        .btn-red:hover { background-color: #b71c1c; }
-        .guarantee { font-size: 0.85rem; color: #777; margin-top: 15px; font-style: italic; }
+        .btn-red { display: inline-block; background-color: #1a1a1a; color: #fff !important; padding: 16px 40px; text-decoration: none !important; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; font-size: 0.95rem; border-radius: 0; transition: all 0.3s ease; border: none; }
+        .btn-red:hover { background-color: #d32f2f; }
+        .guarantee { font-size: 0.85rem; color: #777; margin-top: 20px; font-style: italic; font-family: 'Georgia', serif; }
         
-        .navigation-notes { margin-top: 50px; text-align: center; font-size: 1rem; border-top: 1px solid #eee; padding-top: 30px; }
-        .navigation-notes a { color: #1a1a1a; font-weight: bold; text-decoration: none; border-bottom: 1px solid #ccc; }
+        .navigation-notes { margin-top: 50px; text-align: center; font-size: 1rem; border-top: 1px solid #eee; padding-top: 30px; font-family: 'Georgia', serif; }
+        .navigation-notes a { color: #1a1a1a; font-weight: bold; text-decoration: none; border-bottom: 1px solid #ccc; font-family: 'Helvetica Neue', Arial, sans-serif; }
         .navigation-notes a:hover { border-bottom: 1px solid #1a1a1a; }
 
+        /* --- FOOTER UNIFICADO DE DOS COLUMNAS --- */
         footer { padding: 60px 20px 40px 20px; background-color: #ffffff; border-top: 1px solid #f2f2f2; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.9rem; line-height: 1.6; }
         .footer-grid { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1.2fr 1fr; gap: 50px; text-align: left; }
         @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; gap: 35px; text-align: center; } }
@@ -67,103 +75,97 @@
 <main>
     <article class="content-box">
         <h1>¿Tienes un iPhone en tu bolsillo pero tus fotos siguen pareciendo de aficionado?</h1>
-        <div class="subtitle">Descubre cómo sacar fotos de nivel profesional con tu celular en solo 90 minutos. Sin cámaras pesadas, sin complicaciones y en vivo por Zoom.</div>
-
-        <div class="cta-container" style="margin-top: 0;">
-            <a href="https://calendly.com/sergiolubezky" target="_blank" class="btn-red">Reservar mi Clase por $800 MXN</a>
-            <div class="guarantee">Sesión privada 1-a-1 de 90 minutos de alto impacto técnico.</div>
-        </div>
+        <div class="subtitle">Descubre cómo desarrollar una mirada profesional con el dispositivo que te acompaña siempre. Sin complicaciones técnicas y en vivo por Zoom.</div>
 
         <h2>Te suena familiar alguna de estas situaciones:</h2>
         <ul class="pain-list">
-            <li>Compras un iPhone nuevo con una cámara increíble, pero las fotos de tus viajes, productos o familia salen oscuras, movidas o con colores apagados.</li>
-            <li>No entiendes por qué el teléfono "enfoca" automáticamente el fondo en lugar de a la persona, objeto o platillo de comida que tienes enfrente.</li>
-            <li>Ves imágenes espectaculares en redes sociales y piensas: <em>"Ojalá yo pudiera tomar fotos así"</em>, sin saber que ellos solo activaron los ajustes correctos que tu iPhone ya tiene integrados.</li>
+            <li>Compras un iPhone con un sistema óptico avanzado, pero las capturas de tus viajes, proyectos o familia siguen saliendo oscuras, con ruido digital o con colores planos.</li>
+            <li>La cámara enfoca de manera automática elementos secundarios en el fondo en lugar de aislar el rostro, el objeto o el detalle que tienes frente a ti.</li>
+            <li>Ves narrativas visuales impecables en redes y asumes que se requiere un equipo sofisticado, ignorando que tu propio teléfono ya cuenta con las herramientas nativas necesarias.</li>
         </ul>
 
-        <p><strong>La buena noticia:</strong> No necesitas invertir en una cámara profesional pesada ni en equipo costoso. Ya tienes una de las mejores herramientas ópticas del mundo en la palma de tu mano. Solo te hace falta el manual de instrucciones ejecutivo y correcto.</p>
+        <p><strong>La realidad técnica:</strong> No es necesario cargar con pesadas cámaras de lentes intercambiables para lograr imágenes con intención. El iPhone moderno posee una ingeniería de procesamiento de luz extraordinaria; el eslabón ausente es la configuración quirúrgica y el entendimiento de la composición desde el terreno de juego.</p>
 
         <h2>Presentamos — Domina tu iPhone: Fotografía Profesional</h2>
-        <p>Una masterclass 100% personalizada, en vivo y uno a uno por Zoom. No es un video grabado aburrido ni un webinar masivo. Es una sesión práctica donde abriremos la cámara de tu iPhone, corregiremos tus vicios técnicos y te enseñaré a configurarlo para que cada captura sea digna de portafolio.</p>
-        <p><strong>¿Por qué en 90 minutos?</strong> Porque eliminamos el relleno. Vamos directo al grano: configuración nativa, técnica de exposición, leyes de composición, revelado digital express y práctica en tiempo real. Ni un minuto más, ni un minuto menos.</p>
+        <p>Una sesión completamente individual y adaptada, en vivo uno-a-uno a través de Zoom. Esto no es un módulo de videos pregrabados ni una conferencia masiva. Es un taller práctico donde desglosaremos la app nativa de tu dispositivo, corregiremos vicios de encuadre y ajustaremos los parámetros de captura para que cada imagen responda fielmente a tu intención de diseño.</p>
+        <p><strong>¿Por qué en 90 minutos?</strong> Porque eliminamos el relleno retórico. Vamos directo al grano: calibración base de la interfaz, control manual de exposición, leyes geométricas de composición, revelado express y crítica constructiva en tiempo real. Ni un minuto más, ni un minuto menos.</p>
 
         <h2>Temario de Precisión (Desglose Minuto a Minuto)</h2>
         <div class="timeline">
             <div class="timeline-item">
                 <strong>Min 00 - 10: El Despertar de tu Cámara (Configuración Base)</strong>
                 <ul>
-                    <li>El "pecado capital" número 1: Limpiar el lente adecuadamente sin dañarlo.</li>
-                    <li>Activación del potencial oculto: Cuadrícula (Grid), Niveles y Formatos (Alta eficiencia vs. Más compatible).</li>
-                    <li>Cómo desactivar el "recorte automático" restrictivo en fotos grupales o macros.</li>
+                    <li>El factor primario elemental: El mantenimiento físico del lente óptico sin comprometer su recubrimiento.</li>
+                    <li>Activación de herramientas nativas de asistencia: Cuadrícula (Grid), Niveles de horizonte y selección del formato idóneo (Alta eficiencia vs. Más compatible).</li>
+                    <li>Control del ajuste de encuadre automático para evitar distorsiones restrictivas en tomas macro o grupales.</li>
                 </ul>
             </div>
             <div class="timeline-item">
                 <strong>Min 10 - 25: Los Superpoderes de la App Nativa</strong>
                 <ul>
-                    <li>Bloqueo AE/AF: Control manual de exposición y enfoque (el secreto para cielos definidos y rostros iluminados).</li>
-                    <li>Modo Retrato Avanzado: Simulación de profundidad de campo (f/1.4 a f/16) e iluminación de estudio natural.</li>
-                    <li>Modo Noche: Umbrales reales de activación y técnicas de estabilización a pulso.</li>
-                    <li>Estilos Fotográficos: Perfiles cálidos, vibrantes o de alto contraste protegiendo el tono de la piel.</li>
+                    <li>Bloqueo AE/AF: Gestión manual e independiente de exposición y enfoque para rescatar altas luces en cielos y rellenar sombras en rostros.</li>
+                    <li>Modo Retrato Avanzado: Control dinámico de la profundidad de campo simulada (f/1.4 a f/16) e iluminación de estudio controlada.</li>
+                    <li>Umbrales del Modo Noche: Cuándo forzarlo, cuándo desactivarlo y técnicas de estabilidad a pulso.</li>
+                    <li>Estilos Fotográficos: Personalización de perfiles térmicos y de contraste protegiendo los tonos de piel reales.</li>
                 </ul>
             </div>
             <div class="timeline-item">
                 <strong>Min 25 - 40: Composición y el Arte del Zoom Óptico</strong>
                 <ul>
-                    <li>La regla de los tercios optimizada para encuadres verticales y horizontales de impacto.</li>
-                    <li>La regla de oro del iPhone: Por qué JAMÁS debes usar el zoom digital (pellizcar pantalla). Uso de lentes ópticos nativos (0.5x, 1x, 3x, 5x).</li>
-                    <li>Perspectivas creativas: Ángulos contrapicados, encuadres fluidos a través de objetos y simetría geométrica.</li>
+                    <li>La regla de los tercios y proporciones áureas optimizadas para formatos verticales y horizontales de alta fricción visual.</li>
+                    <li>La regla de oro restrictiva: Por qué el zoom digital destruye la información de pixeles. Uso correcto de los lentes físicos nativos (0.5x, 1x, 3x, 5x).</li>
+                    <li>Perspectivas no convencionales: Ángulos contrapicados, marcos naturales y simetrías arquitectónicas.</li>
                 </ul>
             </div>
             <div class="timeline-item">
                 <strong>Min 40 - 55: El As bajo la manga: Live Photos y Video</strong>
                 <ul>
-                    <li>Live Photos estratégicos: Selección del frame milimétrico para rescatar parpadeos o movimientos inesperados.</li>
-                    <li>Conversión a Larga Exposición: Efecto seda en corrientes de agua, cascadas o estelas de luz urbana.</li>
+                    <li>Live Photos como herramienta de rescate: Selección del frame milimétrico exacto para corregir parpadeos o movimientos fortuitos.</li>
+                    <li>Efecto de Larga Exposición: Conversión del registro temporal para lograr el efecto seda en corrientes de agua o estelas de iluminación urbana.</li>
                 </ul>
             </div>
             <div class="timeline-item">
                 <strong>Min 55 - 70: Edición Express (De buena a WOW en 30 segundos)</strong>
                 <ul>
-                    <li>Dominio del revelado nativo en iOS: Ajustes quirúrgicos de brillo, negros, luces altas, viñeteado y enderezado dinámico.</li>
-                    <li>Flujo Relámpago en Lightroom Mobile (Gratuito): Aplicación consistente de preajustes (presets) para un feed profesional.</li>
+                    <li>Revelado nativo en iOS: Ajustes no destructivos de negros, luces altas, contraste tonal, viñeteado y corrección de perspectiva.</li>
+                    <li>Flujo quirúrgico en Lightroom Mobile: Introducción al uso de preajustes para dotar a tus capturas de una estética editorial consistente.</li>
                 </ul>
             </div>
             <div class="timeline-item">
                 <strong>Min 70 - 85: Práctica en Vivo y Feedback Inmediato</strong>
                 <ul>
-                    <li>El alumno toma 3 fotografías en ese instante (en su entorno inmediato) aplicando las herramientas raíces revisadas.</li>
-                    <li>Compartimos pantalla en Zoom o vía WhatsApp para realizar una micro-crítica constructiva y corrección técnica en vivo.</li>
+                    <li>Ejecución en tiempo real: El alumno realiza tres tomas de prueba aplicando los conceptos de luz y geometría revisados.</li>
+                    <li>Análisis compartido en pantalla para micro-crítica constructiva y optimización técnica al momento.</li>
                 </ul>
             </div>
             <div class="timeline-item">
-                <strong>Min 85 - 90: Cierre, Resolución de Dudas y Entrega</strong>
+                <strong>Min 85 - 90: Cierre y Entrega</strong>
                 <ul>
-                    <li>Sesión abierta de preguntas y respuestas rápidas.</li>
-                    <li>Entrega del Bonus digital inmediato.</li>
+                    <li>Resolución abierta de preguntas técnicas y entrega del material complementario.</li>
                 </ul>
             </div>
         </div>
 
-        <h2>Lo que habrás dominado al terminar la sesión:</h2>
+        <h2>Lo que habrás dominado al concluir el taller:</h2>
         <ul class="benefit-list">
-            <li><strong>Bloqueo AE/AF absoluto:</strong> Adiós a las fotos quemadas por el sol o a los rostros perdidos en las sombras.</li>
-            <li><strong>Manejo del Bokeh:</strong> Fondos desenfocados estéticos que aíslan y dan importancia a tu sujeto principal.</li>
-            <li><strong>Garantía de nitidez:</strong> Técnicas avanzadas de captura y postproducción rápida en menos de un minuto antes de publicar o archivar.</li>
+            <li><strong>Gobernanza del Enfoque y Exposición:</strong> Control absoluto sobre los puntos de luz de la escena, evitando tomas quemadas o subexpuestas.</li>
+            <li><strong>Aislamiento de Sujetos (Bokeh):</strong> Comprensión del desenfoque estético para dotar de tracción visual y jerarquía a tus composiciones.</li>
+            <li><strong>Agilidad de Postproducción:</strong> Un flujo de revelado digital limpio y veloz que deja la imagen lista en menos de un minuto antes de su almacenamiento o publicación.</li>
         </ul>
 
         <h2>¿Para quién está diseñado este entrenamiento?</h2>
-        <p>Para **viajeros** que desean documentar sus travesías con calidad excepcional sin cargar mochilas pesadas. Para **emprendedores y creadores de contenido** que necesitan un feed pulcro y comercial. Para **padres de familia** que buscan retratar el crecimiento de sus hijos con calidad editorial, y para cualquier usuario de iPhone (modelo 11 en adelante) decidido a apagar de una vez por todas el modo automático restrictivo.</p>
+        <p>Para <strong>viajeros</strong> decididos a documentar sus rutas con calidad editorial sin la fricción de cargar equipos voluminosos. Para <strong>emprendedores</strong> que requieren profesionalizar de inmediato el catálogo estético de su feed de marca. Para cualquier entusiasta que busque capturar entornos familiares cotidianos con un lenguaje compositivo avanzado y desee prescindir de los automatismos genéricos del sistema.</p>
 
         <div class="cta-container">
-            <h3>Invierte de forma inteligente en tus recuerdos</h3>
-            <p>El conocimiento adquirido te ahorrará cientos de ráfagas borradas, frustraciones y memorias arruinadas en tus próximas vacaciones o proyectos comerciales.</p>
-            <p><strong>Incluye:</strong> Clase personalizada 1-a-1 por Zoom + Grabación de la sesión para repaso + PDF <em>"La Guía de Bolsillo: 10 Ajustes críticos del iPhone"</em>.</p>
-            <a href="https://calendly.com/sergiolubezky" target="_blank" class="btn-red">Agendar mi Clase Personalizada Ahora</a>
-            <div class="guarantee">Garantía de Satisfacción: Si en los primeros 20 minutos consideras que la clase no cumple tus expectativas, detenemos la sesión y te devolvemos el 100% de tu inversión sin preguntas.</div>
+            <h3>Planifica tu Sesión de Transición Técnica</h3>
+            <p>Una inversión enfocada en la preservación de tus registros visuales. La masterclass incluye la sesión privada 1-a-1 de 90 minutos por Zoom, la grabación íntegra de la clase para tu repaso posterior y la entrega del PDF <em>"La Guía de Bolsillo: 10 Ajustes críticos del iPhone"</em>.</p>
+            <p><strong>Inversión única:</strong> $800 MXN</p>
+            <a href="https://calendly.com/sergiolubezky" target="_blank" class="btn-red">Agendar Clase Personalizada</a>
+            <div class="guarantee">Garantía de Satisfacción: Si durante los primeros 20 minutos de la clase consideras que el enfoque técnico no se alinea con tus expectativas, detenemos la sesión y te reembolsamos la inversión de forma íntegra.</div>
         </div>
 
         <div class="navigation-notes">
-            <p>¿Buscas dar el salto técnico a plataformas tradicionales? Explora nuestro curso de <a href="/camara-fotografica/">Manejo de Cámara Profesional</a> o regresa al <a href="/">inicio</a>.</p>
+            <p>¿Buscas extender estos principios de la mirada hacia plataformas tradicionales de lentes intercambiables? Explora el <a href="/taller-zoom/">Taller de Cámara Digital</a> o regresa al <a href="/">inicio</a> de Coach de Foto.</p>
         </div>
     </article>
 </main>

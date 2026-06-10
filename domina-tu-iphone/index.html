@@ -10,23 +10,18 @@
 
     <style>
         body { margin: 0; display: flex; flex-direction: column; min-height: 100vh; background-color: #fff; color: #1a1a1a; font-family: 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; -webkit-font-smoothing: antialiased; }
-        
         main { flex: 1; display: flex; justify-content: center; padding: 60px 20px 80px 20px; }
         .content-box { width: 100%; max-width: 750px; text-align: left; }
         
-        /* Encabezado / Hero Section */
         h1 { font-size: 2.2rem; font-weight: 800; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; text-align: center; line-height: 1.2; color: #1a1a1a; }
         .subtitle { font-size: 1.2rem; color: #555; text-align: center; margin-bottom: 40px; font-weight: 400; max-width: 650px; margin-left: auto; margin-right: auto; }
-        
         p { margin-bottom: 20px; text-align: justify; font-size: 1.1rem; color: #333; }
         
-        /* Listas de Dolor y Beneficios */
         ul { list-style: none; padding: 0; margin: 25px 0; }
         ul li { font-size: 1.1rem; margin-bottom: 15px; padding-left: 30px; position: relative; text-align: justify; }
         ul.pain-list li::before { content: "❌"; position: absolute; left: 0; top: 2px; }
         ul.benefit-list li::before { content: "✅"; position: absolute; left: 0; top: 2px; }
         
-        /* Temario / Acordeón Operativo */
         h2 { font-size: 1.5rem; font-weight: 700; margin-top: 50px; margin-bottom: 25px; letter-spacing: 0.5px; text-transform: uppercase; color: #1a1a1a; border-bottom: 2px solid #1a1a1a; padding-bottom: 8px; }
         
         .timeline { margin: 30px 0 40px 20px; }
@@ -36,21 +31,18 @@
         .timeline-item ul li { padding-left: 0; margin-bottom: 5px; font-size: 1rem; color: #444; }
         .timeline-item ul li::before { content: none; }
 
-        /* Contenedores de Llamada a la Acción (CTA) */
         .cta-container { text-align: center; margin: 45px 0; padding: 40px 30px; background-color: #f9f9f9; border: 1px solid #eee; border-radius: 4px; }
         .cta-container h3 { font-size: 1.3rem; text-transform: uppercase; letter-spacing: 1px; margin-top: 0; margin-bottom: 15px; font-weight: 700; }
         .cta-container p { text-align: center; font-size: 1.05rem; color: #444; margin-bottom: 25px; }
         
         .btn-red { display: inline-block; background-color: #d32f2f; color: #fff !important; padding: 16px 40px; text-decoration: none !important; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; font-size: 1rem; border-radius: 4px; transition: background 0.3s; border: none; box-shadow: 0 4px 6px rgba(211,47,47,0.15); }
         .btn-red:hover { background-color: #b71c1c; }
-        
         .guarantee { font-size: 0.85rem; color: #777; margin-top: 15px; font-style: italic; }
         
         .navigation-notes { margin-top: 50px; text-align: center; font-size: 1rem; border-top: 1px solid #eee; padding-top: 30px; }
         .navigation-notes a { color: #1a1a1a; font-weight: bold; text-decoration: none; border-bottom: 1px solid #ccc; }
         .navigation-notes a:hover { border-bottom: 1px solid #1a1a1a; }
 
-        /* --- HOJA DE ESTILOS UNIFICADA PARA EL FOOTER --- */
         footer { padding: 60px 20px 40px 20px; background-color: #ffffff; border-top: 1px solid #f2f2f2; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.9rem; line-height: 1.6; }
         .footer-grid { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1.2fr 1fr; gap: 50px; text-align: left; }
         @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; gap: 35px; text-align: center; } }
@@ -58,7 +50,6 @@
         .footer-col p { color: #555; margin: 0; font-size: 0.9rem; text-align: justify; line-height: 1.6; }
         .footer-col ul { list-style: none; padding: 0; margin: 0; }
         .footer-col ul li { margin-bottom: 12px; padding-left: 0; font-size: 0.9rem; }
-        .footer-col ul li::before { content: none; }
         .footer-col ul li a { color: #1a1a1a; text-decoration: none; font-weight: 600; border-bottom: 1px solid #eee; transition: all 0.3s; }
         .footer-col ul li a:hover { border-bottom: 1px solid #1a1a1a; }
         .footer-col ul li a.current-location { color: #d32f2f !important; border-bottom: 1px solid #f9ebeb; }
@@ -140,7 +131,7 @@
             <div class="timeline-item">
                 <strong>Min 70 - 85: Práctica en Vivo y Feedback Inmediato</strong>
                 <ul>
-                    <li>El alumno toma 3 fotografías en ese instante (en su entorno inmediato) aplicando las herramientas revisadas.</li>
+                    <li>El alumno toma 3 fotografías en ese instante (en su entorno inmediato) aplicando las herramientas raíces revisadas.</li>
                     <li>Compartimos pantalla en Zoom o vía WhatsApp para realizar una micro-crítica constructiva y corrección técnica en vivo.</li>
                 </ul>
             </div>
@@ -191,10 +182,12 @@
             </div>
         </div>
         <div class="footer-col">
-            <h3>Coach de Foto</h3>
+            <h3>Contenido</h3>
             <ul>
-                <li><a href="https://coachdefoto.com/camara-fotografica/">Cámara Profesional</a></li>
-                <li><a href="https://coachdefoto.com/domina-tu-iphone/" class="current-location">Curso iPhone</a></li>
+                <li><a href="/como-aprender-a-ver/">Aprender a ver</a></li>
+                <li><a href="/taller-zoom/">Taller de Cámara (Zoom)</a></li>
+                <li><a href="/domina-tu-iphone/" class="current-location">Curso iPhone (Zoom)</a></li>
+                <li><a href="/viajes/">Viajes Fotográficos</a></li>
                 <li><a href="https://lubezky.com/mapa/">Mapa del Ecosistema</a></li>
             </ul>
         </div>
@@ -203,7 +196,7 @@
             <ul>
                 <li><a href="https://lubezky.com">Lubezky.com</a></li>
                 <li><a href="https://inteligencia.com">Inteligencia</a></li>
-                <li><a href="https://liderazgointerino.com/">Liderazgo Interino</a></li>
+                <li><a href="https://liderazgointerino.com">Liderazgo Interino</a></li>
                 <li><a href="https://coachdefoto.com/" class="current-location">Coach de Foto</a></li>
                 <li><a href="https://elmismobarco.com">El Mismo Barco</a></li>
                 <li><a href="https://unnuevopuntodevista.com">Un Nuevo Punto de Vista</a></li>
